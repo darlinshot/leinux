@@ -14,3 +14,16 @@ output_path = "~/.config/hypr/modules/miscs/configs/style.lua"
 [templates.neovim]
 input_path = "~/.config/matugen/templates/nvim.lua"
 output_path = "~/.config/nvim/lua/config/colors.lua"
+
+[templates.gtk3]
+input_path = "~/.config/matugen/templates/gtk3.css"
+output_path = "~/.config/gtk-3.0/gtk.css"
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path = "~/.config/matugen/templates/gtk3.css"
+output_path = "~/.config/gtk-4.0/gtk.css"
+
+[templates.btop]
+input_path = "~/.config/matugen/templates/btop.theme"
+output_path = "~/.config/btop/themes/btop.theme"

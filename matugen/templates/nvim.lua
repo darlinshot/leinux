@@ -170,7 +170,7 @@ vim.api.nvim_set_hl(0, Keyword, {
 })
 
 vim.api.nvim_set_hl(0, Statement, {
-    fg = colors.primary,
+    fg = colors.secondary,
 })
 
 vim.api.nvim_set_hl(0, Type, {
