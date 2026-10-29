@@ -1,0 +1,60 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "spacing": 0,
+    "modules-left": [
+        "clock"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "backlight",
+        "battery"
+    ],
+    "clock": {
+        "format": "{:%H:%M %d/%m}"
+    },
+    "hyprland/workspaces": {
+        "format": "{name}"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "{icon} muted",
+        "format-icons": {
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        }
+    },
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "󰃞",
+            "󰃟",
+            "󰃠"
+        ]
+    },
+    "battery": {
+        "states": {
+            "warning": 60,
+            "serious": 30,
+            "critical": 9
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-critical": "󰂃 {capacity}%",
+        "format-charging-critical": "󰂄 {capacity}%",
+        "format-icons": [
+            "󰁺",
+            "󰁼",
+            "󰁾",
+            "󰂀",
+            "󰁹"
+        ]
+    }
+}

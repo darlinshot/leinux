@@ -1,5 +1,5 @@
 local Quickshell = {
-	"quickshell",
+	"waybar",
 }
 
 return Quickshell

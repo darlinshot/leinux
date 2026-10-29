@@ -2,7 +2,7 @@ local Apps = {
 	-- Browser
 	{
 		KEY = "SUPER + B",
-		EXEC = hl.dsp.exec_cmd("helium-browser"),
+		EXEC = hl.dsp.exec_cmd("zen-browser"),
 	},
 
 	{

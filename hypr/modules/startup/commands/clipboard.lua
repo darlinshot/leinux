@@ -1,9 +1,9 @@
 local Quickshell = {
 	"cliphist wipe",
-	"exec-once = wl-paste", --type text --watch cliphist store
-	"exec-once = wl-paste", --type image --watch cliphist store
-	"exec-one = wl-copy", --watch cliphist store
-	"exec-once = wl-clip-persist", --clipboard regular
+	"wl-paste --type text --watch cliphist store",
+	"wl-paste --type image --watch cliphist store",
+	"wl-copy --watch cliphist store",
+	"wl-clip-persist --clipboard regular"
 }
 
 return Quickshell

@@ -1,9 +1,10 @@
 Dependencies:
+
 - `hyprland`
 - `quickshell`
 - `rofi`
 - `alacritty`
-- `helium-browser`
+- `zen-browser` (as default)
 - `grim`
 - `slurp`
 

@@ -1,0 +1,122 @@
+/* Palette */
+@define-color bg1 #1a120e;
+@define-color fg1 #322824;
+@define-color tx1 #d8c2ba;
+@define-color bd1 #52443d;
+@define-color bg2 #271e1a;
+@define-color fg2 #71361a;
+@define-color tx2 #f1dfd8;
+@define-color bd2 #a08d85;
+@define-color ac1 #e6bead;
+@define-color ac2 #d2c78f;
+@define-color er1 #ffb4ab;
+@define-color er2 #93000a;
+
+/* Strict widget colors */
+@define-color sky #8cc8dd;
+@define-color bat-green #9fbe8f;
+@define-color bat-orange #dda06f;
+
+* {
+    font-family: "JetBrainsMono Nerd Font Propo", "JetBrainsMono Nerd Font", monospace;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+window#waybar {
+    background-color: @bg1;
+    color: @tx1;
+    border-bottom: 2px solid @bd1;
+}
+
+tooltip {
+    background-color: @bg2;
+    border: 1px solid @bd2;
+    border-radius: 12px;
+}
+
+tooltip label {
+    color: @tx2;
+    padding: 6px 10px;
+}
+
+#clock,
+#pulseaudio,
+#backlight,
+#battery {
+    background-color: @bg2;
+    border: 1px solid @bd1;
+    border-radius: 12px;
+    margin: 4px 5px;
+    padding: 0 16px;
+}
+
+#clock {
+    color: @tx2;
+    border-color: @bd2;
+    font-weight: 600;
+}
+
+#workspaces {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#workspaces button {
+    background-color: @bg2;
+    color: @tx1;
+    border: 1px solid @bd1;
+    border-radius: 12px;
+    margin: 4px 3px;
+    padding: 0 14px;
+    min-width: 24px;
+    transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+#workspaces button:hover {
+    background-color: @fg1;
+    color: @tx2;
+    border-color: @bd2;
+}
+
+#workspaces button.active {
+    background-color: @ac1;
+    color: @bg1;
+    border-color: @ac1;
+    font-weight: 600;
+}
+
+#workspaces button.urgent {
+    background-color: @er2;
+    color: @er1;
+    border-color: @er1;
+}
+
+/* Volume: one sky-blue color */
+#pulseaudio,
+#pulseaudio.muted {
+    color: @sky;
+}
+
+/* Brightness: warm yellow, never orange */
+#backlight {
+    color: @ac2;
+}
+
+/* Battery: green -> yellow -> orange -> red */
+#battery {
+    color: @bat-green;
+}
+
+#battery.warning {
+    color: @ac2;
+}
+
+#battery.serious {
+    color: @bat-orange;
+}
+
+#battery.critical {
+    color: @er1;
+}
