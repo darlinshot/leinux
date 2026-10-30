@@ -1,0 +1,17 @@
+@define-color bg1 #1a120e;
+@define-color fg1 #322824;
+@define-color tx1 #d8c2ba;
+@define-color bd1 #52443d;
+@define-color bg2 #271e1a;
+@define-color fg2 #71361a;
+@define-color tx2 #f1dfd8;
+@define-color bd2 #a08d85;
+@define-color ac1 #e6bead;
+@define-color ac2 #d2c78f;
+@define-color er1 #ffb4ab;
+@define-color er2 #93000a;
+
+/* Strict widget colors */
+@define-color sky #8cc8dd;
+@define-color bat-green #9fbe8f;
+@define-color bat-orange #dda06f;

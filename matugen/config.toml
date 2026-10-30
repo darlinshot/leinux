@@ -1,7 +1,8 @@
 [config]
+
 [templates.quickshell]
-input_path = '~/.config/matugen/templates/quickshell.qml' # Path to template above
-output_path = '~/.config/quickshell/Config/Colors.qml'       # Path where Quickshell looks for it
+input_path = '/home/ei/.config/matugen/templates/quickshell.qml' # Path to template above
+output_path = '/home/ei/.config/quickshell/Config/Colors.qml'       # Path where Quickshell looks for it
 
 [templates.alacritty]
 input_path = "~/.config/matugen/templates/alacritty.toml"
@@ -18,12 +19,12 @@ output_path = "~/.config/nvim/lua/config/colors.lua"
 [templates.gtk3]
 input_path = "~/.config/matugen/templates/gtk3.css"
 output_path = "~/.config/gtk-3.0/gtk.css"
-post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
-
-[templates.gtk4]
-input_path = "~/.config/matugen/templates/gtk3.css"
-output_path = "~/.config/gtk-4.0/gtk.css"
 
 [templates.btop]
 input_path = "~/.config/matugen/templates/btop.theme"
 output_path = "~/.config/btop/themes/btop.theme"
+
+[templates.waybar]
+input_path = "~/.config/matugen/templates/waybar.css"
+output_path = "~/.config/waybar/colors.css"
+post_hook = "pkill -SIGUSR2 waybar"

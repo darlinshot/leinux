@@ -1,0 +1,17 @@
+@define-color bg1 {{colors.surface.default.hex}};
+@define-color fg1 {{colors.surface_container_high.default.hex}};
+@define-color tx1 {{colors.on_surface_variant.default.hex}};
+@define-color bd1 {{colors.outline_variant.default.hex}};
+@define-color bg2 {{colors.surface_container.default.hex}};
+@define-color fg2 {{colors.primary_container.default.hex}};
+@define-color tx2 {{colors.on_surface.default.hex}};
+@define-color bd2 {{colors.outline.default.hex}};
+@define-color ac1 {{colors.secondary.default.hex}};
+@define-color ac2 {{colors.tertiary.default.hex}};
+@define-color er1 {{colors.error.default.hex}};
+@define-color er2 {{colors.error_container.default.hex}};
+
+/* Strict widget colors */
+@define-color sky #8cc8dd;
+@define-color bat-green #9fbe8f;
+@define-color bat-orange #dda06f;
