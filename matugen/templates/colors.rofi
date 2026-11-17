@@ -1,0 +1,33 @@
+/* Matugen template for the rofi palette.
+   Names and layout mirror ~/.config/rofi/colors.rofi.
+   Colors come from ~/.config/rofi/template.css. */
+
+* {
+    /* Surfaces */
+    bg1: {{colors.surface.default.hex}};
+    bg2: {{colors.surface_container.default.hex}};
+    fg1: {{colors.surface_container_high.default.hex}};
+    fg2: {{colors.primary_container.default.hex}};
+
+    /* Text */
+    tx1: {{colors.on_surface_variant.default.hex}};
+    tx2: {{colors.on_surface.default.hex}};
+
+    /* Borders */
+    bd1: {{colors.outline_variant.default.hex}};
+    bd2: {{colors.outline.default.hex}};
+
+    /* Accents */
+    ac1: {{colors.secondary.default.hex}};
+    ac2: {{colors.tertiary.default.hex}};
+    er1: {{colors.error.default.hex}};
+    er2: {{colors.error_container.default.hex}};
+
+    /* Strict widget colors */
+    sky:        #8cc8dd;
+    bat-green:  #9fbe8f;
+    bat-orange: #dda06f;
+
+    /* Divider derived from bd1, softened with alpha */
+    line: {{colors.outline_variant.default.hex}}80;
+}

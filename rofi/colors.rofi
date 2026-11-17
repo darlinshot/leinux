@@ -1,0 +1,33 @@
+/* Matugen template for the rofi palette.
+   Names and layout mirror ~/.config/rofi/colors.rofi.
+   Colors come from ~/.config/rofi/template.css. */
+
+* {
+    /* Surfaces */
+    bg1: #18120c;
+    bg2: #251e17;
+    fg1: #302921;
+    fg2: #653e00;
+
+    /* Text */
+    tx1: #d4c4b5;
+    tx2: #eee0d4;
+
+    /* Borders */
+    bd1: #504539;
+    bd2: #9c8e80;
+
+    /* Accents */
+    ac1: #dfc2a2;
+    ac2: #bbcd9e;
+    er1: #ffb4ab;
+    er2: #93000a;
+
+    /* Strict widget colors */
+    sky:        #8cc8dd;
+    bat-green:  #9fbe8f;
+    bat-orange: #dda06f;
+
+    /* Divider derived from bd1, softened with alpha */
+    line: #50453980;
+}
